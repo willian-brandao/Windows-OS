@@ -17,3 +17,5 @@ Lista de Programas Permitidos
 Será exibida uma lista com todos os programas que têm permissão de comunicação pelo firewall.
 
 Role e procure nomes de programas que tenham parênteses ( ) no nome.
+
+# 

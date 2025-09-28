@@ -1,3 +1,4 @@
+# Encontrar aplicações permitidas no firewall
 Abrir o Painel de Controle
 
 Pressione Win + R → digite control → pressione Enter.

@@ -53,6 +53,23 @@ As permissões ajustáveis são:
 * Ler
 * Escrever
 
+# Controle de Contas de Usuários (UAC)
+
+Uma funcionalidade de segurança embutida no sistema operacional. UAC trabalha requisitando confirmação antes de performar operações que requerem permissões administrativas no computador. Isso ajuda a prevenir erros causados por mudanças não autorizadas ou instalações de malwares. 
+
+Quando um programa tenta executar uma operação que requer privilégios administrativos( instalar programas, mudar configurações de sistema), a janela do UAC aparece na tela e a ação deve ser aceita ou negada.
+
+### Níveis
+
+* Sempre notificar.
+* Notificar somente quando programas tentam realizar mudanças no computador(padrão): apenas notificações de ações feitas por programas, mas não pelo próprio usuário.
+* Notificar somente quando programas tentarem fazer alterações no meu computador: a área de trabalho permanece utilizável quando a janela do UAC está aberta.
+* Nunca notificar.
+
+
+
+
+
   
   
 

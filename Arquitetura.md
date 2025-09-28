@@ -37,7 +37,24 @@ NTFS é conhecido como um sistema de arquivos de registro diário. Em um evento 
 * Confiabilidade - NTFS provê registros para melhorar a integridade dos dados e recuperação.
 * Funcionalidades - NTFS oferece funções adicionais como compressão de arquivos, encriptação e cotas de disco para melhorar o gerenciamento de armazenado e segurança.
 
-* 
+# Lista de Controle de Acesso (ACL)
+
+A lista determina quem pode acessar um recurso (arquivo, pasta, impressoras, recursos de redes) em um sistema de computador e o quais permissões a pessoa deve ter.
+
+ACL permite que administradores de sistemas e usuários protejam dados sensíveis e assegurem que apenas pessoas autorizadas podem acessar recursos específicos.
+
+No discos NTFS permissão de acesso para arquivos e pastas podem ser configurados.
+
+As permissões ajustáveis são:
+* Controle Total
+* Modificar
+* Ler e Executar
+* Listas pastas e conteúdos
+* Ler
+* Escrever
+
+  
+  
 
 
 

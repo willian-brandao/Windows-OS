@@ -157,8 +157,33 @@ C:\Users\user\Documents>dir
                1 File(s)              0 bytes
                2 Dir(s)  20,308,176,896 bytes free
 ```
+### Deletar arquivos
+```
+C:\Users\user\Documents>dir
+ Volume in drive C has no label.
+ Volume Serial Number is AE5B-68D3
 
+ Directory of C:\Users\user\Documents
 
+03/18/2024  10:38 PM    <DIR>          .
+03/18/2024  10:38 PM    <DIR>          ..
+03/18/2024  10:35 PM                 0 test1.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  20,308,045,824 bytes free
+
+C:\Users\user\Documents>del test1.txt
+
+C:\Users\user\Documents>dir
+ Volume in drive C has no label.
+ Volume Serial Number is AE5B-68D3
+
+ Directory of C:\Users\user\Documents
+
+03/18/2024  10:39 PM    <DIR>          .
+03/18/2024  10:39 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  20,308,045,824 bytes free
+```
 
 
 ## Powershell

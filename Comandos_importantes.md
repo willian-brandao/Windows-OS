@@ -230,9 +230,9 @@ Get-Help -Name Get-Command -Detailed
 
 ### Listar o conteúdo do diretório
 
-``
+```
 Get-ChildItem
-``
+```
 ### Mudar de diretório
 
 ```
@@ -241,8 +241,10 @@ PS C:\Users\user\Documents>
 ```
 
 ### Criar um arquivo novo ou uma pasta
-``
+```
 PS C:\Users\user\Documents> New-Item file.txt``
+```
+
 
 ### Instalar pacotes
 ```Powershell

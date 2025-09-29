@@ -134,3 +134,61 @@ NewADUser - criar o novo usuário
 -SamAccountName j.doe - nome do login antigo do Windows (até Windows 2000) feito para autenticação em sistemas legados. 
 
 -AccountPassword (ConvertTo-SecureString "sifre123!" -AsPlainText -Force) - Define a senha da conta do usuário. O PowerShell exige que a senha seja um SecureString por segurança. ConvertTo-SecureString "sifre123!" -AsPlainText -Force: ConvertTo-SecureString converte uma string normal em uma senha segura. -AsPlainText indica que você está passando a senha em texto simples (não recomendado em produção). -Force permite que o PowerShell aceite essa conversão mesmo sendo texto simples.
+
+### SetADUser 
+Modifica as propriedades de uma conta de usuário existente.
+```
+Set-ADUser -Identity "j.doe" -Surname "doe"
+```
+
+### Remove-ADUser
+Deleta uma conta de usuário do Active Directory
+```
+Remove-ADUser "j.doe"
+```
+
+## Gerenciar grupos do AD
+
+### Get-ADGroup
+Procura por informações usando o nome do grupo
+```
+Get-ADGroup "Students"
+```
+Listar todos os grupos
+```
+Get-ADGroup -Filter *
+```
+### New-ADGroup
+Criar um novo grupo seguro no Active Directory
+```
+New-ADGroup -Name "Students" -GroupScope Universal
+```
+
+### Set-ADGroup
+Modificar propriedades de um grupo já existente.
+```
+Set-ADGroup -Identity "Students" -Description "Learn as if you were to live forever"
+```
+
+### Get-ADGroupMember
+Mostra os membros do grupo
+```
+Get-ADGroupMember -Identity "Students"
+```
+### Add-ADGroupMember
+Adiciona um usuário a um grupo
+```
+Add-ADGroupMember -Identity "Students" -Members j.doe
+```
+
+### Remove-ADGroupMember
+Remove usuário ou grupo de um grupo do AD
+```
+Remove-ADGroupMember -Identity "Students" -Member "j.doe"
+```
+
+### Remove-ADGroup
+Remove um grupo de segurança do AD
+```
+Remove-ADGroup "Students"
+```

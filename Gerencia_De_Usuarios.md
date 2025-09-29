@@ -32,6 +32,8 @@ RSAT inclui várias ferramentas de gerenciamento usando ferramentas de uma inter
 
 Listando usuários e grupos e as permissões que eles possuem é possível validar riscos potenciais para a segurança dos dispositivos. 
 
+## Gerência de Usuários 
+
 ### Get-LocalUser
 Buscar as informações de um determinado usuário.
 ```
@@ -66,4 +68,24 @@ Disable-LocalUser -Name "j.doe"
 # habilitar
 Enable-LocalUser -Name "j.doe"
 ```
+### Remove-LocalUser
+Deleta o usuário do computador
+```
+Remove-LocalUser -Name "j.doe"
+```
+
+## Gerência de Grupos
+
+### Get-LocalGroup
+Lista todos os grupos locais
+```
+Get-LocalGroup
+```
+
+### New-LocalGroup
+Criar um novo grupo
+```
+New-LocalGroup -Name "Students"
+```
+
 

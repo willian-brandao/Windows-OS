@@ -107,3 +107,30 @@ Deleta um grupo local
 ```
 Remove-LocalGroup -Name "Students"
 ```
+
+## Gerenciamento de usuários do Active Directory
+
+### Get-ADUser
+
+Procurar pelo nome de usuário
+```
+Get-ADUser "j.doe"
+```
+Listar todos os usuários
+```
+Get-ADUser -Filter *
+```
+### New-ADUser
+
+Criar um novo usuário no AD
+
+```
+New-ADUser -Name "j.doe" -SamAccountName j.doe -AccountPassword (ConvertTo-SecureString "sifre123!" -AsPlainText -Force)
+```
+NewADUser - criar o novo usuário
+
+-Name "j.doe" - nome completo do usuário
+
+-SamAccountName j.doe - nome do login antigo do Windows (até Windows 2000) feito para autenticação em sistemas legados. 
+
+-AccountPassword (ConvertTo-SecureString "sifre123!" -AsPlainText -Force) - Define a senha da conta do usuário. O PowerShell exige que a senha seja um SecureString por segurança. ConvertTo-SecureString "sifre123!" -AsPlainText -Force: ConvertTo-SecureString converte uma string normal em uma senha segura. -AsPlainText indica que você está passando a senha em texto simples (não recomendado em produção). -Force permite que o PowerShell aceite essa conversão mesmo sendo texto simples.

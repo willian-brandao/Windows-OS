@@ -242,9 +242,36 @@ PS C:\Users\user\Documents>
 
 ### Criar um arquivo novo ou uma pasta
 ```
-PS C:\Users\user\Documents> New-Item file.txt``
+PS C:\Users\user\Documents> New-Item file.txt
+
+PS C:\Users\user\Documents> New-Item -ItemType Directory logs
+
+Get-Help New-Item -examples
 ```
 
+### Remover arquivos
+```
+PS C:\Users\user\Documents> Remove-Item .\logs\
+```
+### Copiar arquivos
+```
+PS C:\Users\user\Documents> Copy-Item file.txt file1.txt
+```
+### Mover arquivos
+```
+PS C:\Users\user\Documents> Move-Item .\file1.txt ..\Desktop\
+```
+
+### Ler conteúdo do arquivo
+
+```
+PS C:\Users\user\Documents> Get-Content .\file.txt
+```
+
+### Acessar os processos do sistema operacional
+```
+PS C:\Users\user> Get-Process
+```
 
 ### Instalar pacotes
 ```Powershell

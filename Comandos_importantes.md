@@ -188,6 +188,19 @@ C:\Users\user\Documents>dir
 
 ## Powershell
 
+### Alias
+
+Alias são nomes especiais no powershell que são usados para criar shortcuts para cmdlets, funções e scripts. Eles ajudam a trabalhar mais rápido fazendo comandos mais curtos e fáceis de escrever.
+Ex: O comando cd pode ser usado para Set-Location cmdlet.
+```
+PS C:\Users\user> alias cd
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           cd -> Set-Location
+```
+
+
 ### Checar a versão do powershel
 ```
 PS C:\Users\user> $PSVersionTable
@@ -214,6 +227,23 @@ para validar o uso do comando descreva o comando abaixo
 ```
 Get-Help -Name Get-Command -Detailed
 ```
+
+### Listar o conteúdo do diretório
+
+``
+Get-ChildItem
+``
+### Mudar de diretório
+
+```
+PS C:\Users\user> Set-Location .\Documents\
+PS C:\Users\user\Documents>
+```
+
+### Criar um arquivo novo ou uma pasta
+``
+PS C:\Users\user\Documents> New-Item file.txt``
+
 ### Instalar pacotes
 ```Powershell
 winget search Microsoft.Powershell

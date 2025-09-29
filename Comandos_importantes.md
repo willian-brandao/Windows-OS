@@ -272,6 +272,15 @@ PS C:\Users\user\Documents> Get-Content .\file.txt
 ```
 PS C:\Users\user> Get-Process
 ```
+### Parar processos
+```
+PS C:\Users\user> Stop-Process -Id 5432
+```
+### Iniciar um processo
+
+```
+PS C:\Users\user> Start-Service -Name Appinfo
+```
 
 ### Instalar pacotes
 ```Powershell
@@ -302,3 +311,36 @@ sudo snap install powershell --classic
 brew install powershell/tap/powershell
 ``
 
+# Comandos mais complexos no powershell
+
+O pipe permite deixar os comandos do powershell mais completos e realizar mais funções do que as determinadas anteriormente pelo comando.
+
+### Select-Object
+
+Comando para especificar propriedades de objetos em uma coleção mostrando apenas as informações necessárias.
+```
+Get-Process | Select-Object ProcessName, Id
+```
+
+### Where_object 
+
+Permite filtrar objetos baseados em critérios específicos. 
+```
+Get-Service | Where-Object Status -eq "Running"
+```
+
+### Operadores Comuns
+* -eq: equals
+* -ne: not equal
+* -gt: greater than
+* -ge: greater than or equal
+* -lt: less than
+* -le: less than or equal
+
+### Select String 
+É usado para procurar e selecionar linhas de texto in arquivos
+```
+PS C:\Users\user\Documents> Select-String -Pattern "today" .\file.txt
+
+file.txt:1:The purpose of today's training is to defeat yesterday's understanding. - Miyamoto Musashi
+```

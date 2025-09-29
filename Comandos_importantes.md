@@ -188,7 +188,33 @@ C:\Users\user\Documents>dir
 
 ## Powershell
 
-## Instalar pacotes
+### Checar a versão do powershel
+```
+PS C:\Users\user> $PSVersionTable
+
+Name                           Value
+----                           -----
+PSVersion                      5.1.19041.1237
+PSEdition                      Desktop
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+BuildVersion                   10.0.19041.1237
+CLRVersion                     4.0.30319.42000
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+```
+
+### Buscar mais informações sobre um comando
+```
+Get-Help Get-Help
+```
+### Comando para listar todos os comandos, cmdlets, functions, filtros, scripts 
+
+para validar o uso do comando descreva o comando abaixo 
+```
+Get-Help -Name Get-Command -Detailed
+```
+### Instalar pacotes
 ```Powershell
 winget search Microsoft.Powershell
 Name               Id                           Version Source

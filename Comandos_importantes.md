@@ -41,6 +41,126 @@ C:\Users\user>cd Documents
 C:\Users\user\Documents>
 ```
 
+### Criar pastas
+```
+C:\Users\user\Documents>dir
+ Volume in drive C has no label.
+ Volume Serial Number is AE5B-68D3
+
+ Directory of C:\Users\user\Documents
+
+03/15/2024  11:30 PM    <DIR>          .
+03/15/2024  11:30 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  20,308,930,560 bytes free
+
+C:\Users\user\Documents>mkdir newdir
+
+C:\Users\user\Documents>dir
+ Volume in drive C has no label.
+ Volume Serial Number is AE5B-68D3
+
+ Directory of C:\Users\user\Documents
+
+03/18/2024  10:32 PM    <DIR>          .
+03/18/2024  10:32 PM    <DIR>          ..
+03/18/2024  10:32 PM    <DIR>          newdir
+               0 File(s)              0 bytes
+               3 Dir(s)  20,308,930,560 bytes free
+```
+
+### Deletar diretórios
+```
+C:\Users\user\Documents>dir
+ Volume in drive C has no label.
+ Volume Serial Number is AE5B-68D3
+
+ Directory of C:\Users\user\Documents
+
+03/18/2024  10:32 PM    <DIR>          .
+03/18/2024  10:32 PM    <DIR>          ..
+03/18/2024  10:32 PM    <DIR>          newdir
+               0 File(s)              0 bytes
+               3 Dir(s)  20,308,930,560 bytes free
+
+C:\Users\user\Documents>rmdir newdir
+
+C:\Users\user\Documents>dir
+ Volume in drive C has no label.
+ Volume Serial Number is AE5B-68D3
+
+ Directory of C:\Users\user\Documents
+
+03/18/2024  10:32 PM    <DIR>          .
+03/18/2024  10:32 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  20,308,860,928 bytes free
+```
+
+### Copiar arquivos
+```
+C:\Users\user\Documents>dir
+ Volume in drive C has no label.
+ Volume Serial Number is AE5B-68D3
+
+ Directory of C:\Users\user\Documents
+
+03/18/2024  10:35 PM    <DIR>          .
+03/18/2024  10:35 PM    <DIR>          ..
+03/18/2024  10:35 PM                 0 test.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  20,308,324,352 bytes free
+
+C:\Users\user\Documents>copy test.txt test1.txt
+        1 file(s) copied.
+
+C:\Users\user\Documents>dir
+ Volume in drive C has no label.
+ Volume Serial Number is AE5B-68D3
+
+ Directory of C:\Users\user\Documents
+
+03/18/2024  10:36 PM    <DIR>          .
+03/18/2024  10:36 PM    <DIR>          ..
+03/18/2024  10:35 PM                 0 test.txt
+03/18/2024  10:35 PM                 0 test1.txt
+               2 File(s)              0 bytes
+               2 Dir(s)  20,308,324,352 bytes free
+```
+### Mover arquivos
+```
+C:\Users\user\Documents>dir
+ Volume in drive C has no label.
+ Volume Serial Number is AE5B-68D3
+
+ Directory of C:\Users\user\Documents
+
+03/18/2024  10:36 PM    <DIR>          .
+03/18/2024  10:36 PM    <DIR>          ..
+03/18/2024  10:35 PM                 0 test.txt
+03/18/2024  10:35 PM                 0 test1.txt
+               2 File(s)              0 bytes
+               2 Dir(s)  20,308,324,352 bytes free
+
+C:\Users\user\Documents>move test.txt ..\Desktop
+        1 file(s) moved.
+
+C:\Users\user\Documents>dir
+ Volume in drive C has no label.
+ Volume Serial Number is AE5B-68D3
+
+ Directory of C:\Users\user\Documents
+
+03/18/2024  10:38 PM    <DIR>          .
+03/18/2024  10:38 PM    <DIR>          ..
+03/18/2024  10:35 PM                 0 test1.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  20,308,176,896 bytes free
+```
+
+
+
+
 ## Powershell
 
 ## Instalar pacotes

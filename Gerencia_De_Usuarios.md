@@ -8,22 +8,22 @@ Powershell pode ser usado como uma ferramenta poderosa para gerenciar usuários 
 
 RSAT inclui várias ferramentas de gerenciamento usando ferramentas de uma interface gráfica, enquanto outras são oferecidas como powershell cmdlets.
 
-Instalação
+## Instalação
 
-Abra o menu Iniciar.
+* Abra o menu Iniciar.
 
-Vá para Configurações.
+* á para Configurações.
 
-Selecione Aplicativos.
+* Selecione Aplicativos.
 
-Clique em Aplicativos e recursos.
+* Clique em Aplicativos e recursos.
 
-No painel à direita, encontre "Recursos opcionais".
+* No painel à direita, encontre "Recursos opcionais".
 
-Clique em "Adicionar um recurso".
+* Clique em "Adicionar um recurso".
 
-Na janela que abrir, pesquise por "RSAT".
+* Na janela que abrir, pesquise por "RSAT".
 
-Selecione o resultado da pesquisa.
+* Selecione o resultado da pesquisa.
 
-Clique em "Instalar".
+* Clique em "Instalar".

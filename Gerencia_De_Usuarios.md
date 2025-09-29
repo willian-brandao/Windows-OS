@@ -87,5 +87,23 @@ Criar um novo grupo
 ```
 New-LocalGroup -Name "Students"
 ```
-
-
+### Set_LocalGroup
+Mudar as propriedades de um grupo
+```
+Set-LocalGroup -Name "Students" -Description "Improvise. Adapt. Overcome."
+```
+### Add-LocalGroupMember
+Adicionar usuário ou grupo a um grupo específico
+```
+Add-LocalGroupMember -Group "Students" -Member "j.doe"
+```
+### Remove-LocalGroupMember
+Remover um membro grupo local
+```
+Remove-LocalGroupMember -Group "Students" -Member "j.doe"
+```
+### Remove-LocalGroup
+Deleta um grupo local
+```
+Remove-LocalGroup -Name "Students"
+```

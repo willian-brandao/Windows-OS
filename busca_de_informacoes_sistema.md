@@ -56,3 +56,16 @@ Get-Acl file.txt
 Get-FileHash file.txt
 ```
 
+## Buscar informações de módulos do sistema
+```
+PS C:\Users\Administrator> Find-Module -Name "sysinternals"
+
+Version    Name                                Repository           Description
+-------    ----                                ----------           -----------
+1.1.0      SysInternals                        PSGallery            PowerShell cmdlets for SysInternal tools
+```
+
+## Instalar módulos
+```
+Install-Module -Name SysInternals
+```
